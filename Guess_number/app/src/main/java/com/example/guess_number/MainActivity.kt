@@ -47,6 +47,8 @@ class MainActivity : AppCompatActivity() {
 
         result_button.setOnClickListener {
             secret=Random().nextInt(10)+1
+            start=1
+            end=100
             textView.text="我們再猜一次"
         }
     }
