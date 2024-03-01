@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val textView = findViewById<TextView>(R.id.result_textView)
         val result_button = findViewById<Button>(R.id.result_button)
-        val editText = findViewById<TextView>(R.id.editText)
+        val editText = findViewById<EditText>(R.id.editText)
         val guess_button = findViewById<Button>(R.id.guess_button)
         var validate_num:Int
         var start:Int = 1
