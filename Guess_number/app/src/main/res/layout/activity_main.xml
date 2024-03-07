@@ -7,10 +7,12 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/result_button"
+        android:id="@+id/reset_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result"
+        android:text="@string/reset"
+        android:textColor="@color/color_text"
+        android:background="@drawable/round_button_selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.69"
@@ -32,7 +34,8 @@
         android:id="@+id/guess_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Guess"
+        android:text="@string/guess"
+        android:background="@drawable/round_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.291"
@@ -56,24 +59,12 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="猜數字"
+        android:text="@string/please_enter_a_number"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.428" />
-
-    <TextView
-        android:id="@+id/Toast"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#FAFAFA"
-        android:text="請輸入一個數字"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
