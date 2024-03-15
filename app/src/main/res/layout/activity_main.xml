@@ -8,57 +8,6 @@
     tools:layout_editor_absoluteX="24dp"
     tools:layout_editor_absoluteY="0dp">
 
-    <EditText
-        android:id="@+id/editTextName"
-        android:layout_width="287dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159" />
-
-    <RadioGroup
-        android:id="@+id/radGrpGender"
-        android:layout_width="292dp"
-        android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.907"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321">
-
-        <RadioButton
-            android:id="@+id/radBtn_Male"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:button="@drawable/radio_selector"
-            android:text="男" />
-
-        <RadioButton
-            android:id="@+id/radBtn_Female"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:button="@drawable/radio_selector"
-            android:text="女" />
-    </RadioGroup>
-
-    <CheckBox
-        android:id="@+id/checkBox_Motorcycle"
-        android:layout_width="90dp"
-        android:layout_height="45dp"
-        android:text="機車"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.336"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.602" />
-
     <CheckBox
         android:id="@+id/checkBox_Car"
         android:layout_width="90dp"
@@ -69,7 +18,19 @@
         app:layout_constraintHorizontal_bias="0.336"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455" />
+        app:layout_constraintVertical_bias="0.553" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Bicycle"
+        android:layout_width="90dp"
+        android:layout_height="47dp"
+        android:text="腳踏車"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625" />
 
     <TextView
         android:id="@+id/Vehicle"
@@ -82,19 +43,19 @@
         app:layout_constraintHorizontal_bias="0.018"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.452" />
+        app:layout_constraintVertical_bias="0.55" />
 
     <CheckBox
-        android:id="@+id/checkBox_Bicycle"
+        android:id="@+id/checkBox_Motorcycle"
         android:layout_width="90dp"
-        android:layout_height="47dp"
-        android:text="腳踏車"
+        android:layout_height="45dp"
+        android:text="機車"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.336"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.524" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <TextView
         android:id="@+id/ID"
@@ -107,7 +68,20 @@
         app:layout_constraintHorizontal_bias="0.018"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.075" />
+
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="286dp"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
 
     <TextView
         android:id="@+id/PWD"
@@ -120,12 +94,12 @@
         app:layout_constraintHorizontal_bias="0.016"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintVertical_bias="0.171" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="289dp"
-        android:layout_height="35dp"
+        android:layout_width="286dp"
+        android:layout_height="57dp"
         android:ems="10"
         android:inputType="textPassword"
         android:textSize="14sp"
@@ -134,7 +108,7 @@
         app:layout_constraintHorizontal_bias="0.885"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintVertical_bias="0.172" />
 
     <TextView
         android:id="@+id/Name"
@@ -144,23 +118,23 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintHorizontal_bias="0.017"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintVertical_bias="0.266" />
 
     <EditText
-        android:id="@+id/editTextID"
-        android:layout_width="284dp"
-        android:layout_height="37dp"
+        android:id="@+id/editTextName"
+        android:layout_width="286dp"
+        android:layout_height="53dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintHorizontal_bias="0.862"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.269" />
 
     <TextView
         android:id="@+id/Birthday"
@@ -170,23 +144,25 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintHorizontal_bias="0.018"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235" />
+        app:layout_constraintVertical_bias="0.361" />
 
     <EditText
         android:id="@+id/editTextDate"
         android:layout_width="289dp"
-        android:layout_height="34dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:inputType="date"
+        android:onClick="datePicker"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintHorizontal_bias="0.909"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232" />
+        app:layout_constraintVertical_bias="0.358"
+        tools:ignore="OnClick" />
 
     <TextView
         android:id="@+id/Gender"
@@ -196,10 +172,36 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintHorizontal_bias="0.018"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292" />
+        app:layout_constraintVertical_bias="0.45" />
+
+    <RadioGroup
+        android:id="@+id/radGrpGender"
+        android:layout_width="295dp"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457">
+
+        <RadioButton
+            android:id="@+id/radBtn_Male"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:button="@drawable/radio_selector"
+            android:text="男" />
+
+        <RadioButton
+            android:id="@+id/radBtn_Female"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:button="@drawable/radio_selector"
+            android:text="女" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/btn_send"
@@ -207,6 +209,7 @@
         android:layout_height="52dp"
         android:text="Send"
         android:textSize="24sp"
+        android:background="@drawable/round_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.573"
