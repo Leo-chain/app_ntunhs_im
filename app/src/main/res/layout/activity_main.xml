@@ -9,7 +9,7 @@
     tools:layout_editor_absoluteY="0dp">
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editTextPWD"
         android:layout_width="286dp"
         android:layout_height="57dp"
         android:ems="10"
